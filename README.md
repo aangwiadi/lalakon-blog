@@ -1,6 +1,6 @@
 # Lalakon Blog
 
-## 🇮🇩 Bahasa Indonesia
+## 🇮🇩 Indonesia
 
 ### Tentang Lalakon Blog
 
