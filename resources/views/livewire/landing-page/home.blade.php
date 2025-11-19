@@ -15,14 +15,14 @@
                 </h2>
             </div>
             <div class="flex-wrap gap-3 flex justify-center">
-                <button
+                <a href="{{ route('services') }}"
                     class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-[#135bec] text-white text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em] hover:bg-opacity-90 transition-all">
                     <span class="truncate">Explore My Services</span>
-                </button>
-                <button
+                </a>
+                <a href="{{ route('product') }}"
                     class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-transparent dark:bg-[#232f48] border border-slate-300 dark:border-transparent text-slate-800 dark:text-white text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em] hover:bg-slate-100 dark:hover:bg-opacity-80 transition-all">
                     <span class="truncate">View Products</span>
-                </button>
+                </a>
             </div>
         </div>
     </div>
@@ -61,10 +61,19 @@
             </div>
         </div>
     </div>
-    <h2
-        class="text-slate-900 dark:text-white text-3xl font-bold leading-tight tracking-[-0.015em] px-4 md:px-12 pb-3 pt-8">
-        Latest Articles
-    </h2>
+    <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4 px-4">
+        <h2
+            class="text-slate-900 dark:text-white text-3xl font-bold leading-tight tracking-[-0.015em] px-4 md:px-12 pb-3 pt-8">
+            Latest Articles
+        </h2>
+        <div class="flex gap-2 overflow-x-auto pb-2">
+            <a href="{{ route('blog') }}"
+                class="flex h-9 shrink-0 items-center justify-center gap-x-2 rounded-full bg-primary text-white px-4">
+                <p class="text-sm font-medium leading-normal">View All Article</p>
+            </a>
+       
+        </div>
+    </div>
     <!-- ImageGrid Component -->
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-4 md:p-8">
         <div class="flex flex-col gap-3 pb-3 group">
